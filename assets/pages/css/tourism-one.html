@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Introduction */
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .intro img {
+            width: 80%;
+            max-width: 750px;
+            border-radius: 10px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            max-width: 800px;
+            margin-top: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Experiences Section */
+        .experiences {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f0f0f0;
+        }
+
+        .experience-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .experience-gallery a img {
+            width: 170px;
+            height: 250px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience-gallery a img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Must Visit */
+        .must-visit {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .must-visit img {
+            width: 300px;
+            height: 190px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .contact h4 {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero img {
+                height: 150px;
+            }
+
+            .intro img {
+                width: 100%;
+            }
+
+            .experience-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .must-visit img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="../../images/tajmahal.jpg" alt="Taj Mahal">
+        <img src="../../images/konark-temple.jpg" alt="Konark Temple">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNe_FVzQUqHf3HWDM0hU0-V98SuwiwoF4Wg&s"
+            alt="Tourism">
+        <img src="../../images/maharashra-torism.jpg" alt="Maharashtra Tourism">
+    </div>
+
+    <!-- Introduction -->
+    <div class="intro">
+        <img src="../../images/incredible-india.jpg" alt="Incredible India">
+        <p>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich
+            heritage and myriad attractions, the country is among the most popular tourist destinations in the world.
+            From the snow-covered Himalayas to the tropical rain forests, India offers diverse landscapes and
+            experiences.</p>
+    </div>
+
+    <!-- Experiences -->
+    <div class="experiences">
+        <h1>Impressive Experiences</h1>
+        <div class="experience-gallery">
+            <a href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/adventure.html">
+                <img src="../../images/adventure-img-one.jpg" alt="Adventure">
+            </a>
+            <a href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/art.html">
+                <img src="../../images/tabla-art-img.webp" alt="Art & Culture">
+            </a>
+            <a href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/food-and-cuisine.html">
+                <img src="../../images/food-cuisins.jpg" alt="Food & Cuisine">
+            </a>
+            <a href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/nature-and-wildlife.html">
+                <img src="../../images/nature-wild-life.jpg" alt="Nature & Wildlife">
+            </a>
+        </div>
+    </div>
+
+    <!-- Must Visit -->
+    <div class="must-visit">
+        <h1>Must Visit</h1>
+        <div>
+            <img src="../../images/ooty.avif" alt="Ooty">
+            <img src="../../images/statue-vallabh-bhai-patel.jpeg" alt="Statue of Unity">
+            <img src="../../images/shillong.webp" alt="Shillong">
+            <img src="../../images/munnar.jpg" alt="Munnar">
+            <img src="../../images/masoori.jpg" alt="Mussoorie">
+        </div>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact">
+        <h4>Contact Details:</h4>
+        <p>Deputy Secretary (IT) <br> Ministry of Tourism, <br> Transport Bhawan, New Delhi</p>
+    </div>
+
+</body>
+
+</html>
